@@ -1,0 +1,20 @@
+digraph {
+	graph [fontname=Arial, nodesep=0.125, ranksep=0.25];
+	node [fontcolor=white, fontname=Arial, height=0, shape=box, style=filled, width=0];
+	edge [fontname=Arial];
+	0 [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="e4:1:slow_function\n99.95%\n(99.95%)\n6×", tooltip="e4.py"];
+	1 [color="#8acd07", fontcolor="#ffffff", fontsize="10.00", label="e4:10:b\n66.51%\n(0.00%)\n2×", tooltip="e4.py"];
+	1 -> 0 [arrowsize="0.58", color="#0b9e6e", fontcolor="#0b9e6e", fontsize="10.00", label="33.15%\n2×", labeldistance="1.33", penwidth="1.33"];
+	1 -> 3 [arrowsize="0.58", color="#0b9f6e", fontcolor="#0b9f6e", fontsize="10.00", label="33.34%\n2×", labeldistance="1.33", penwidth="1.33"];
+	2 [color="#0db609", fontcolor="#ffffff", fontsize="10.00", label="e4:15:c\n50.53%\n(0.00%)\n1×", tooltip="e4.py"];
+	2 -> 0 [arrowsize="0.41", color="#0c6089", fontcolor="#0c6089", fontsize="10.00", label="16.88%\n1×", labeldistance="0.68", penwidth="0.68"];
+	2 -> 1 [arrowsize="0.58", color="#0b9f6c", fontcolor="#0b9f6c", fontsize="10.00", label="33.64%\n1×", labeldistance="1.35", penwidth="1.35"];
+	3 [color="#0ab60a", fontcolor="#ffffff", fontsize="10.00", label="e4:6:a\n49.92%\n(0.00%)\n3×", tooltip="e4.py"];
+	3 -> 0 [arrowsize="0.71", color="#0ab60a", fontcolor="#0ab60a", fontsize="10.00", label="49.92%\n3×", labeldistance="2.00", penwidth="2.00"];
+	5 [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="e4:1:<module>\n100.00%\n(0.01%)\n1×", tooltip="e4.py"];
+	5 -> 1 [arrowsize="0.57", color="#0b9e70", fontcolor="#0b9e70", fontsize="10.00", label="32.87%\n1×", labeldistance="1.31", penwidth="1.31"];
+	5 -> 2 [arrowsize="0.71", color="#0db609", fontcolor="#0db609", fontsize="10.00", label="50.53%\n1×", labeldistance="2.02", penwidth="2.02"];
+	5 -> 3 [arrowsize="0.41", color="#0c5f88", fontcolor="#0c5f88", fontsize="10.00", label="16.58%\n1×", labeldistance="0.66", penwidth="0.66"];
+	6 [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="~:0:<built-in method builtins.exec>\n100.00%\n(0.00%)\n1×", tooltip="~"];
+	6 -> 5 [arrowsize="1.00", color="#ff0000", fontcolor="#ff0000", fontsize="10.00", label="100.00%\n1×", labeldistance="4.00", penwidth="4.00"];
+}
